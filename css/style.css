@@ -163,3 +163,37 @@ a.header-menu-item.active {
     margin-bottom: 1rem;
 }
 /*----- About end ----*/
+
+/*----- Skills start ----*/
+#skills {
+    background-color: var(--color-gray);
+    color: var(--color-white);
+}
+.skills {
+    display: grid;
+    grid-template-columns: 6fr 4fr;
+    margin: 2rem 0;
+    border-radius: 8px;
+    box-shadow: 4px 8px 8px rgba(0, 0, 0, 0.38);
+    overflow: hidden;
+}
+.skills-title {
+    color: var(--color-accent);
+    font-size: 1.2rem;
+    margin: 1rem 0;
+}
+.skills-coding {
+    grid-row: span 2;
+    background-color: var(--color-black);
+    padding: 1rem;
+}
+.skills-tools {
+    padding: 1rem;
+}
+.skills-etc {
+    padding: 1rem;
+    background-color: var(--color-black);
+    filter: brightness(170%);
+}
+
+/*----- Skills end ----*/
