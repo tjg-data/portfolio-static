@@ -459,6 +459,7 @@ a.header-menu-item.active {
     .header, section, footer {
         width: 100%;
         border: 3px solid red;
+        padding: 0;
     }
     .header {
         flex-direction: column;
