@@ -457,7 +457,7 @@ a.header-menu-item.active {
 *********************************************/
 @media screen and (max-width:412px) {
     .header, section, footer {
-        width: 412px;
+        width: 100%;
         border: 3px solid red;
     }
     .header {
