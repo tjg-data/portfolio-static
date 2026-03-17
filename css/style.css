@@ -58,7 +58,8 @@ section.container {
 /*----- Header start ----*/
 .header {
     background-color: var(--color-black);
-    width: 100%;
+    /* width: 100%; */
+    width: var(--max-size-container);
     padding: 1rem;
     display: flex;
     justify-content: space-between;
