@@ -450,8 +450,5 @@ a.header-menu-item.active {
     .projects {
         grid-template-columns: repeat(1, 1fr);
     }
-    .skills-coding {
-        padding: 0.5rem;
-    }
 }
 
