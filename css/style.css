@@ -511,6 +511,7 @@ a.header-menu-item.active {
         align-items: center;
     }
     .category {
+        display: inline-block;
         width: 90%;
         padding: 0.5rem 1rem;   
     }
@@ -538,26 +539,3 @@ a.header-menu-item.active {
         height: 2.5rem;
     }
 }
-
-/*********************************************
-    media screen : 갤럭시 Z 플립 구형 (~ 390px)
-    Z 플립 초대 ~ 플립3
-*********************************************/
-/* @media screen and (max-width: 390px) {
-    section, footer {
-        padding: 1.5rem 0.8rem;
-    }
-    .home-avatar {
-        width: 150px;
-        height: 150px;
-    }
-    .home-title {
-        font-size: 1.8rem;
-    }
-    .title {
-        font-size: 1.6rem;
-    }
-    .category {
-        width: 95%;
-    }
-} */
