@@ -492,7 +492,8 @@ a.header-menu-item.active {
         align-items: center;
     }
     .major {
-        width: 30rem;
+        /* width: 30rem; */
+        width: 100%;
     }
     .job {
         justify-content: center;
