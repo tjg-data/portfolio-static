@@ -12,6 +12,24 @@
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
     <link rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const toggle = document.querySelector('#menu-toggle');
+            const menu = document.querySelector('.header-menu');
+
+            toggle.addEventListener('click', () => {
+                menu.classList.toggle('open');
+            });
+
+            // 메뉴 아이템 클릭 시 메뉴 닫기
+            const menuItems = document.querySelectorAll('.header-menu-item');
+            menuItems.forEach(item => {
+                item.addEventListener('click', () => {
+                    menu.classList.remove('open');
+                });
+            });
+        });
+    </script>
 </head>
 <body>
     <header class="header">
@@ -20,7 +38,7 @@
             <h1 class="header-logo-title">Judy</h1>
         </div>
         <nav>
-            <ul class="header-menu">
+            <ul class="header-menu open">
                 <li><a href="#home" class="header-menu-item active">Home</a></li>
                 <li><a href="#about" class="header-menu-item">About</a></li>
                 <li><a href="#skills" class="header-menu-item">Skills</a></li>
@@ -29,7 +47,7 @@
                 <li><a href="#contact" class="header-menu-item">Contact</a></li>
             </ul>
         </nav>
-        <button class="header-toggle"><i class="fa-solid fa-bars"></i></button>
+        <button class="header-toggle" id="menu-toggle"><i class="fa-solid fa-bars"></i></button>
     </header>
 
     <main>
@@ -280,5 +298,6 @@
         </ul>
         <p>Junior Software Engineer Judy's Portfolio - All right reserved</p>
     </footer>
+
 </body>
 </html>
